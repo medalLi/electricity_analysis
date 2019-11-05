@@ -1,4 +1,4 @@
-package main.java.com.beans;
+package com.beans;
 
 /**
  * @author medal
@@ -6,7 +6,7 @@ package main.java.com.beans;
  **/
 public class User_visit_action {
 
-    private String date;
+    private String dateTime;
     private long user_id;
     private String session_id;
     private long page_id;
@@ -20,8 +20,8 @@ public class User_visit_action {
     private String pay_product_ids;
     private long city_id;
 
-    public User_visit_action(String date, long user_id, String session_id, long page_id, String action_time, String search_keyword, long click_category_id, long click_product_id, String order_category_ids, String order_product_ids, String pay_category_ids, String pay_product_ids, long city_id) {
-        this.date = date;
+    public User_visit_action(String dateTime, long user_id, String session_id, long page_id, String action_time, String search_keyword, long click_category_id, long click_product_id, String order_category_ids, String order_product_ids, String pay_category_ids, String pay_product_ids, long city_id) {
+        this.dateTime = dateTime;
         this.user_id = user_id;
         this.session_id = session_id;
         this.page_id = page_id;
@@ -36,12 +36,12 @@ public class User_visit_action {
         this.city_id = city_id;
     }
 
-    public String getDate() {
-        return date;
+    public String getDateTime() {
+        return dateTime;
     }
 
-    public void setDate(String date) {
-        this.date = date;
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
     public long getUser_id() {
@@ -143,7 +143,7 @@ public class User_visit_action {
     @Override
     public String toString() {
         return "User_visit_action{" +
-                "date='" + date + '\'' +
+                "dateTime='" + dateTime + '\'' +
                 ", user_id=" + user_id +
                 ", session_id='" + session_id + '\'' +
                 ", page_id=" + page_id +

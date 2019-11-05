@@ -1,4 +1,4 @@
-package main.java.com.beans;
+package com.beans;
 
 /**
  * @author medal
